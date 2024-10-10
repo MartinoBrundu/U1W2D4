@@ -2,16 +2,10 @@
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
 
-function area(l1, l2) { 
-     
-
-    console.log(l1*l2)
-    
-     
-
-    
+function area(l1, l2) {
+  console.log(l1 * l2);
 }
-area(5,8)
+area(5, 8);
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -19,21 +13,36 @@ area(5,8)
  la loro somma moltiplicata per tre.
 */
 
-const crazySum = function (number1 , number2) {
-    let sum = number1 + number2
-    if( number1 + number2 === 50) { console.log(sum * 3)}
-    else {console.log(number1 + number2)}
-}
+const crazySum = function (number1, number2) {
+  let sum = number1 + number2;
+  if (number1 + number2 === 50) {
+    console.log(sum * 3);
+  } else {
+    console.log(number1 + number2);
+  }
+};
 
-crazySum(30 , 20)
-
+crazySum(30, 20);
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazyDiff = function (parametro) {
+  let num1 = 19;
+  let num2 = 0;
+
+  if (num1 > parametro) {
+    num2 = num1 - parametro;
+  } else if (parametro > num1) {
+    num2 = parametro - num1;
+  }
+  if (num2 < 19) {console.log(num2*3)}
+  else {console.log(num2)}
+};
+
+crazyDiff(6);
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
