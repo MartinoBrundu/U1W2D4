@@ -49,7 +49,15 @@ crazyDiff(6);
  se n è uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function (n){
+
+    let parametro2 = 'true'
+   
+    if (n > 20 && n  <= 100 || n === 400 ) { console.log(parametro2)}
+
+}
+
+boundary(400)
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
