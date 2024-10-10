@@ -2,13 +2,16 @@
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
 
-function area(l1, l2) {
-    let total = 5*8
-    console.log('la somma è' , total)
+function area(l1, l2) { 
+     
 
+    console.log(l1*l2)
+    
+     
+
+    
 }
-
-area()
+area(5,8)
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -16,7 +19,14 @@ area()
  la loro somma moltiplicata per tre.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazySum = function (number1 , number2) {
+    let sum = number1 + number2
+    if( number1 + number2 === 50) { console.log(sum * 3)}
+    else {console.log(number1 + number2)}
+}
+
+crazySum(30 , 20)
+
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
